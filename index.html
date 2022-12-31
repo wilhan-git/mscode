@@ -5,36 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="Viewport" content="widht=device-widht, initial-scale=1.0">
     <link rel="stylesheet" href="style/estilo.css">
+    <title>Pesquisa de Satisfação</title>
 </head>
 
 <body>
-    <div class="header" id="header">
-
-        <button onclick="toggleSidebar()" class="btn_icon_nav">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-              </svg>
-        </button>
-        <div class="logo_svg_header">
-            <img src="" alt="Logo Moveis Simonetti">
+   <header>
+    <nav class="nav-bar">
+        <div class="Logo">
+           <img src="img/logo_s.svg" alt="Logo Simonetti" width="120px">
         </div>
+
+        <div class="nav-list">
+            <ul>
+                <li class="nav-item"><a href="/index.html" class="nav-link">HOME</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">SOBRE</a></li>
+            </ul>
+        </div>
+
     
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()" class="btn-menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+            </button>
+        </div>
 
-    <div class="navgation_head">
-        <button onclick="toggleSidebar()" class="btn_icon_nav">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-              </svg>
-        </button>
-        <a href="#">HOME</a>
-        <a href="#">CADASTRO</a>
-        <a href="#">SOBRE</a>
-    </div>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="/index.html" class="nav-link">HOME</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">SOBRE</a></li>
+            </ul>
 
+            <button onclick="menuClose()" class="btn-sair">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                  </svg>
+            </button>
+        </div>
+        <script src="script/script.js"></script>
+    </nav>
+   </header>
+
+   <div class="msg-opniao">
+    <h2>PESQUISA DE <br> SATISFAÇÃO MS</h2><br>
+
+    <p><h3>Queremos saber a sua opnião!</h3></p><br>
+        Obrigado pelo interesse na nossa pesquisa. Suas respostas vão nos ajudar a melhorar nosso atendimento a você cliente amigo.<br>
+        <br> É rapidinho: leva menos de 30 segundos para responder. Serão apenas seis perguntas.<br> 
+        <br> Vamos lá ?
+    </p>
 </div>
-<div class="content" id="content">
-    <H1>texto</H1>
-</div>
-<script src="script/script.js"></script>
+
+
+<a class="btn-pesquisar" href="/formPesquisa.html">Responder Pesquisa</a>
 </body>
 </html>
