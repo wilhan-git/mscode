@@ -56,7 +56,7 @@
     <h1>Formulario de Satisfação</h1>
   </div>
 
-  <form action="">
+  <form action="https://api.sheetmonkey.io/form/bujx3fcWnaQUMe9YK7Q22e" method="post">
     <div class="text_nome">
       <label><strong>Nome</strong></label>
       <input type="text" name="nome" id="receberNome" required>
@@ -67,40 +67,40 @@
       <label><strong>1. Em uma escala de 1 a 5, quanto você recomendaria nossos produtos para um amigo ou familiar ?<br></strong></label>
       <br>
       <label>
-        <input type="radio" name="pergunta1" value="1" checked> 1
+        <input type="radio" name="nivelRecomend" value="1" checked> 1
       </label>
       <label>
-        <input type="radio" name="pergunta1" value="2"> 2
+        <input type="radio" name="nivelRecomend" value="2"> 2
       </label>
       <label>
-        <input type="radio" name="pergunta1" value="3"> 3
+        <input type="radio" name="nivelRecomend" value="3"> 3
       </label>
       <label>
-        <input type="radio" name="pergunta1" value="4"> 4
+        <input type="radio" name="nivelRecomend" value="4"> 4
       </label>
       <label>
-        <input type="radio" name="pergunta1" value="5"> 5
+        <input type="radio" name="nivelRecomend" value="5"> 5
       </label>
     </div>
     <br>
 
     <div class="perg_radio">
-      <label><strong>2. De 1 a 5, qual seria a nota que você dá ao nosso atendimento ao cliente ?<br></strong></label>
+      <label><strong>2. De 1 a 5, qual seria a nota que você daria ao conhecimento da pessoa que o atendeu ?<br></strong></label>
       <br>
       <label>
-        <input type="radio" name="pergunta2" value="1" checked> 1
+        <input type="radio" name="notaConhecimento" value="1" checked> 1
       </label>
       <label>
-        <input type="radio" name="pergunta2" value="2"> 2
+        <input type="radio" name="notaConhecimento" value="2"> 2
       </label>
       <label>
-        <input type="radio" name="pergunta2" value="3"> 3
+        <input type="radio" name="notaConhecimento" value="3"> 3
       </label>
       <label>
-        <input type="radio" name="pergunta2" value="4"> 4
+        <input type="radio" name="notaConhecimento" value="4"> 4
       </label>
       <label>
-        <input type="radio" name="pergunta2" value="5"> 5
+        <input type="radio" name="notaConhecimento" value="5"> 5
       </label>
     </div>
     <br>
@@ -109,19 +109,19 @@
       <label><strong>3. De 1 a 5 quais as chances de você seguir comprando nossos produtos ?<br></strong></label>
       <br>
       <label>
-        <input type="radio" name="pergunta3" value="1" checked> 1
+        <input type="radio" name="novaCompra" value="1" checked> 1
       </label>
       <label>
-        <input type="radio" name="pergunta3" value="2"> 2
+        <input type="radio" name="novaCompra" value="2"> 2
       </label>
       <label>
-        <input type="radio" name="pergunta3" value="3"> 3
+        <input type="radio" name="novaCompra" value="3"> 3
       </label>
       <label>
-        <input type="radio" name="pergunta3" value="4"> 4
+        <input type="radio" name="novaCompra" value="4"> 4
       </label>
       <label>
-        <input type="radio" name="pergunta3" value="5"> 5
+        <input type="radio" name="novaCompra" value="5"> 5
       </label>
     </div>
     <br>
@@ -130,19 +130,19 @@
       <label><strong>4. Como você avalia o atendimento recebido ?<br></strong></label>
       <br>
       <label>
-        <input type="radio" name="pergunta4" value="Bom" checked> Bom
+        <input type="radio" name="nivelAtendiment" value="Bom" checked> Bom
       </label>
       <label>
-        <input type="radio" name="pergunta4" value="Muito Satisfeito"> Muito Satisfeito
+        <input type="radio" name="nivelAtendiment" value="Muito Satisfeito"> Muito Satisfeito
       </label>
       <label>
-        <input type="radio" name="pergunta4" value="Neutro"> Neutro
+        <input type="radio" name="nivelAtendiment" value="Neutro"> Neutro
       </label>
       <label>
-        <input type="radio" name="pergunta4" value="Ruim"> Ruim
+        <input type="radio" name="nivelAtendiment" value="Ruim"> Ruim
       </label>
       <label>
-        <input type="radio" name="pergunta4" value="Muito Insatisfeito"> Muito Insatisfeito
+        <input type="radio" name="nivelAtendiment" value="Muito Insatisfeito"> Muito Insatisfeito
       </label>
     </div>
     <br>
@@ -154,7 +154,7 @@
     <div class="text_comentario">
       <label><strong>6. Deixe seu comentario sobre a empresa ( opcional ) :<br></strong></label>
       <br>
-      <textarea id="recebeComentario" placeholder="Digite aqui seu Comentario" rows="3"></textarea>
+      <textarea name="recebeComentario" placeholder="Digite aqui seu Comentario" rows="3"></textarea>
     </div>
 
     <button class="btn_enviar" type="submit">Enviar</button>
