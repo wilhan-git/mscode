@@ -1,93 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/estilo.css">
-    <title>Formulario</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/estilo.css">
+  <title>Formulario</title>
 </head>
+
 <body>
-    <header>
-        <nav class="nav-bar">
-            <div class="Logo">
-               <img src="img/logo_s.svg" alt="Logo Simonetti" width="120px" srcset="">
-            </div>
-    
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><a href="/index.html" class="nav-link">HOME</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">SOBRE</a></li>
-                </ul>
-            </div>
-    
-        
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()" class="btn-menu-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                      </svg>
-                </button>
-            </div>
-    
-            <div class="mobile-menu">
-                <ul>
-                    <li class="nav-item"><a href="/index.html" class="nav-link">HOME</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">SOBRE</a></li>
-                </ul>
-    
-                <button onclick="menuClose()" class="btn-sair">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-                      </svg>
-                </button>
-            </div>
-            <script src="script/script.js"></script>
-        </nav>
-       </header>
+  <header>
+    <nav class="nav-bar">
+      <div class="Logo">
+        <img src="img/logo_s.svg" alt="Logo Simonetti" width="120px" srcset="">
+      </div>
 
-       <form class="form" >
-        <div class="row" id="recebeNome">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Digite seu nome">
-        </div>
+      <div class="nav-list">
+        <ul>
+          <li class="nav-item"><a href="/index.html" class="nav-link">HOME</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">SOBRE</a></li>
+        </ul>
+      </div>
 
-            <div class="">
-                <div class="custom-control custom-radio">
-                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadio3">Toggle this custom radio</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" id="customRadio" name="customRadio" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
-                  </div>
-            
-            </div>
 
-            <div class="inline">
-                <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadioInline1">Toggle this custom radio</label>
-                  </div>
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadioInline2">Or toggle this other custom radio</label>
-                  </div>
-            </div>
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()" class="btn-menu-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </button>
+      </div>
 
-       </form>
-    
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item"><a href="/index.html" class="nav-link">HOME</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">SOBRE</a></li>
+        </ul>
+
+        <button onclick="menuClose()" class="btn-sair">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg"
+            viewBox="0 0 16 16">
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+          </svg>
+        </button>
+      </div>
+      <script src="script/script.js"></script>
+    </nav>
+  </header>
+
+  <div class="title_form">
+    <h1>Formulario de Satisfação</h1>
+  </div>
+
+  <form action="">
+    <div class="text_nome">
+      <label><strong>Nome</strong></label>
+      <input type="text" name="nome" id="receberNome" required>
+      <br>
+    </div>
+
+    <div class="perg_radio">
+      <label><strong>1. Em uma escala de 1 a 5, quanto você recomendaria nossos produtos para um amigo ou familiar ?<br></strong></label>
+      <br>
+      <label>
+        <input type="radio" name="pergunta1" value="1" checked> 1
+      </label>
+      <label>
+        <input type="radio" name="pergunta1" value="2"> 2
+      </label>
+      <label>
+        <input type="radio" name="pergunta1" value="3"> 3
+      </label>
+      <label>
+        <input type="radio" name="pergunta1" value="4"> 4
+      </label>
+      <label>
+        <input type="radio" name="pergunta1" value="5"> 5
+      </label>
+    </div>
+    <br>
+
+    <div class="perg_radio">
+      <label><strong>2. De 1 a 5, qual seria a nota que você dá ao nosso atendimento ao cliente ?<br></strong></label>
+      <br>
+      <label>
+        <input type="radio" name="pergunta2" value="1" checked> 1
+      </label>
+      <label>
+        <input type="radio" name="pergunta2" value="2"> 2
+      </label>
+      <label>
+        <input type="radio" name="pergunta2" value="3"> 3
+      </label>
+      <label>
+        <input type="radio" name="pergunta2" value="4"> 4
+      </label>
+      <label>
+        <input type="radio" name="pergunta2" value="5"> 5
+      </label>
+    </div>
+    <br>
+
+    <div class="perg_radio">
+      <label><strong>3. De 1 a 5 quais as chances de você seguir comprando nossos produtos ?<br></strong></label>
+      <br>
+      <label>
+        <input type="radio" name="pergunta3" value="1" checked> 1
+      </label>
+      <label>
+        <input type="radio" name="pergunta3" value="2"> 2
+      </label>
+      <label>
+        <input type="radio" name="pergunta3" value="3"> 3
+      </label>
+      <label>
+        <input type="radio" name="pergunta3" value="4"> 4
+      </label>
+      <label>
+        <input type="radio" name="pergunta3" value="5"> 5
+      </label>
+    </div>
+    <br>
+
+    <div class="perg_radio">
+      <label><strong>4. Como você avalia o atendimento recebido ?<br></strong></label>
+      <br>
+      <label>
+        <input type="radio" name="pergunta4" value="Bom" checked> Bom
+      </label>
+      <label>
+        <input type="radio" name="pergunta4" value="Muito Satisfeito"> Muito Satisfeito
+      </label>
+      <label>
+        <input type="radio" name="pergunta4" value="Neutro"> Neutro
+      </label>
+      <label>
+        <input type="radio" name="pergunta4" value="Ruim"> Ruim
+      </label>
+      <label>
+        <input type="radio" name="pergunta4" value="Muito Insatisfeito"> Muito Insatisfeito
+      </label>
+    </div>
+    <br>
+    <div class="text_palavra">
+      <label><strong>5. Digite a palavra que melhor identifica nossos produtos.<br></strong></label>
+      <input type="text" name="recebePalavra" id="recebePalavra" placeholder="Ex: Confiavel, Caro, Bom e Barato, de Baixa qualidade" required>
+    </div>
+    <br>
+    <div class="text_comentario">
+      <label><strong>6. Deixe seu comentario sobre a empresa ( opcional ) :<br></strong></label>
+      <br>
+      <textarea id="recebeComentario" placeholder="Digite aqui seu Comentario" rows="3"></textarea>
+    </div>
+
+    <button class="btn_enviar" type="submit">Enviar</button>
+
+  </form>
+
 </body>
+
 </html>
