@@ -7,7 +7,7 @@ function menuShow(){
     
    
 }
-
+// removendo o menu mobile
 function menuClose(){
     menuMobile.classList.remove('open');
     menuicon.style.display = '';
